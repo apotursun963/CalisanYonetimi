@@ -1,7 +1,5 @@
 
-
 #include "FuncHeader.h"
-
 
 int		main(void) 
 {
@@ -49,7 +47,7 @@ int		main(void)
                 printf("\n\t\t\t\t\t\t\t\tGecerli Bir Islem Giriniz.\n");
         }
     } while (Secim != 7);
-
+    
     return (0);
 }
 

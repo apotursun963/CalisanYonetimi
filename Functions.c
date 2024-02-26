@@ -1,21 +1,18 @@
 
-
 #include "FuncHeader.h"
 
-
-	struct  CalisanInfo
-	{   
-	    int     ID;
-	    char    Ad[20];
-	    char    SoyAd[20];
-	    int     Yas;
-	    double  Maas;
-	};
+struct  CalisanInfo
+{   
+    int     ID;
+    char    Ad[20];
+    char    SoyAd[20];
+    int     Yas;
+    double  Maas;
+};
 
 struct  CalisanInfo Calisanlar[100];
 
 int     CalisanSayisi = 0;
-
 
 void    CalisanEkle(void)
 {
@@ -63,7 +60,7 @@ void    CalisanSil(void)
         if (strcmpi(Calisanlar[i].Ad, isim) == 0) 
         {
             for (i; i < CalisanSayisi - 1; i++) 
-            Calisanlar[i] = Calisanlar[i + 1];    // bir elemanın diziden çıkarılması.
+            Calisanlar[i] = Calisanlar[i + 1];
         CalisanSayisi--;
         printf("\n\t\t\t\t\t\t\t\tCalisan Silindi\n");
         break;
