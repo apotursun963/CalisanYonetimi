@@ -1,6 +1,9 @@
 
 #include "FuncHeader.h"
 
+
+int     CalisanSayisi = 0;
+
 struct  CalisanInfo
 {   
     int     ID;
@@ -9,10 +12,7 @@ struct  CalisanInfo
     int     Yas;
     double  Maas;
 };
-
 struct  CalisanInfo Calisanlar[100];
-
-int     CalisanSayisi = 0;
 
 void    CalisanEkle(void)
 {
